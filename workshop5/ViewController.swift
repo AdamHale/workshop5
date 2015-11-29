@@ -1,25 +1,46 @@
-//
-//  ViewController.swift
-//  workshop5
-//
-//  Created by Adam Hale (i7685032) on 26/10/2015.
-//  Copyright © 2015 Adam Hale (i7685032). All rights reserved.
-//
-
 import UIKit
+import MapKit
+import CoreLocation
 
 class ViewController: UIViewController {
+    @IBOutlet weak var myMap: MKMapView!
+    @IBOutlet weak var myImage: UIImageView!
+    
+    let locationManager = CLLocationManager ()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        myMap.setUserTrackingMode(.Follow, animated: true)
+    
+        
+        locationManager.requestAlwaysAuthorization()
+        locationManager.delegate = self
+
+        let pierApproach = CLLocationCoordinate2D(latitude: 50.716266, longitude: -1.875662)
+        let pierApproachRegion = CLCircularRegion(center: pierApproach, radius: 20, identifier: "approach")
+        locationManager.startMonitoringForRegion(pierApproachRegion)
+        
+        
+
+        
+        
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
+    extension ViewController: CLLocationManagerDelegate {
+
+
+        
+        func locationManager(manager: CLLocationManager, didEnterRegion region: CLRegion) {
+            //myImage.image = UIImage(named: region.identifier)
+            print("WORKED")
+        }
+        
+        func locationManager(manager: CLLocationManager, didExitRegion region: CLRegion) {
+            //myImage.image = nil
+        }
+
+            
+}

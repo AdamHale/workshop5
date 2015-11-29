@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  workshop5
-//
-//  Created by Adam Hale (i7685032) on 26/10/2015.
-//  Copyright © 2015 Adam Hale (i7685032). All rights reserved.
-//
 
 import UIKit
 

@@ -14,6 +14,7 @@
 		5BF8F5BE1BDE4F60001BB2BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BF8F5BC1BDE4F60001BB2BD /* LaunchScreen.storyboard */; };
 		5BF8F5C91BDE4F61001BB2BD /* workshop5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF8F5C81BDE4F61001BB2BD /* workshop5Tests.swift */; };
 		5BF8F5D41BDE4F61001BB2BD /* workshop5UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF8F5D31BDE4F61001BB2BD /* workshop5UITests.swift */; };
+		5BF8F5E21BDE4F94001BB2BD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF8F5E11BDE4F94001BB2BD /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 		5BF8F5CF1BDE4F61001BB2BD /* workshop5UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = workshop5UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF8F5D31BDE4F61001BB2BD /* workshop5UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = workshop5UITests.swift; sourceTree = "<group>"; };
 		5BF8F5D51BDE4F61001BB2BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BF8F5E11BDE4F94001BB2BD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		5BF8F5E31BDE5085001BB2BD /* PierApproach.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PierApproach.gpx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BF8F5E21BDE4F94001BB2BD /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +81,7 @@
 		5BF8F5A71BDE4F60001BB2BD = {
 			isa = PBXGroup;
 			children = (
+				5BF8F5E11BDE4F94001BB2BD /* MapKit.framework */,
 				5BF8F5B21BDE4F60001BB2BD /* workshop5 */,
 				5BF8F5C71BDE4F61001BB2BD /* workshop5Tests */,
 				5BF8F5D21BDE4F61001BB2BD /* workshop5UITests */,
@@ -99,6 +104,7 @@
 			children = (
 				5BF8F5B31BDE4F60001BB2BD /* AppDelegate.swift */,
 				5BF8F5B51BDE4F60001BB2BD /* ViewController.swift */,
+				5BF8F5E31BDE5085001BB2BD /* PierApproach.gpx */,
 				5BF8F5B71BDE4F60001BB2BD /* Main.storyboard */,
 				5BF8F5BA1BDE4F60001BB2BD /* Assets.xcassets */,
 				5BF8F5BC1BDE4F60001BB2BD /* LaunchScreen.storyboard */,
@@ -483,6 +489,7 @@
 				5BF8F5DA1BDE4F61001BB2BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5BF8F5DB1BDE4F61001BB2BD /* Build configuration list for PBXNativeTarget "workshop5Tests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +498,7 @@
 				5BF8F5DD1BDE4F61001BB2BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5BF8F5DE1BDE4F61001BB2BD /* Build configuration list for PBXNativeTarget "workshop5UITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +507,7 @@
 				5BF8F5E01BDE4F61001BB2BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
